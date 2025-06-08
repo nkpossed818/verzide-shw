@@ -1,90 +1,61 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html><html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Infinity SHW</title>
   <style>
     body {
-      margin: 0;
-      font-family: 'Arial', sans-serif;
-      background: #111;
-      color: white;
-      text-align: center;
-      padding: 2rem;
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      padding: 20px;
     }
-
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
+    h1, h2 {
+      border-bottom: 2px solid #fff;
+      padding-bottom: 5px;
     }
-
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 1rem auto;
+    .section {
+      margin-bottom: 30px;
     }
-
-    li {
-      font-size: 1.5rem;
-      margin: 0.3rem 0;
+    .membro {
+      margin-top: 10px;
+      border-top: 1px solid #fff;
+      padding-top: 10px;
     }
-
-    a.button {
-      display: inline-block;
-      margin-top: 2rem;
-      padding: 0.75rem 1.5rem;
-      background: #00aaff;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 8px;
+    a {
+      color: #0ff;
     }
-
-    #audio-control {
-      margin-top: 1.5rem;
-      background: none;
-      border: 2px solid white;
-      color: white;
-      padding: 0.5rem 1rem;
-      border-radius: 6px;
-      cursor: pointer;
+    audio {
+      display: none;
     }
   </style>
 </head>
-<body>
-  <h1>Infinity SHW</h1>
-  <h2>Membros</h2>
-  <ul>
-    <li>Nome 1</li>
-    <li>Nome 2</li>
-    <li>Nome 3</li>
-    <li>Nome 4</li>
-  </ul>
-
-  <a href="https://t.me/seuGrupoTelegram" target="_blank" class="button">Entrar no Telegram</a>
-
-  <br />
-  <button id="audio-control">Pausar Música</button>
-
-  <audio id="bg-music" autoplay loop>
-    <source src="musica.mp3" type="audio/mpeg">
-    Seu navegador não suporta áudio HTML5.
-  </audio>
-
-  <script>
-    const audio = document.getElementById('bg-music');
-    const btn = document.getElementById('audio-control');
-
-    btn.addEventListener('click', () => {
-      if (audio.paused) {
-        audio.play();
-        btn.textContent = 'Pausar Música';
-      } else {
-        audio.pause();
-        btn.textContent = 'Tocar Música';
-      }
-    });
-  </script>
-</body>
+<body>  <audio autoplay loop>
+    <source src="https://freddiedreddmusic.s3.amazonaws.com/Frank+Miller+(Kill+Again).mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio.
+  </audio>  <h1>Infinity SHW</h1>  <div class="section">
+    <h2>Fundadores</h2>
+    <div class="membro">Terror</div>
+    <div class="membro">Vianna</div>
+  </div>  <div class="section">
+    <h2>Dono</h2>
+    <div class="membro">nk</div>
+  </div>  <div class="section">
+    <h2>Líderes</h2>
+    <div class="membro">Richard</div>
+    <div class="membro">Victor</div>
+  </div>  <div class="section">
+    <h2>Admins</h2>
+    <div class="membro">arkin</div>
+    <div class="membro">robert</div>
+    <div class="membro">zaax</div>
+    <div class="membro">snown</div>
+    <div class="membro">lither</div>
+    <div class="membro">tiago</div>
+    <div class="membro">maverick</div>
+    <div class="membro">klaus</div>
+  </div>  <div class="section">
+    <h2>Canal Oficial</h2>
+    <a href="https://t.me/infinityshw" target="_blank">Acessar o Canal no Telegram</a>
+  </div></body>
 </html>
